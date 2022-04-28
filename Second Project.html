@@ -1,19 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <style>        
+    <style>
+    
+  @import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   text-align: center;
+  background-image: url(https://images.wallpaperscraft.com/image/single/forest_trees_fog_110131_1920x1080.jpg);
 }
+
+#title {
+  color: red;
+  font-size: 3em;
+  font-family: 'Square Peg', cursive;
+}
+
+#description {
+  font-size: 1.5em;
+  font-family: monospace;
+  background: transparent;
+}
+
+.border {
+  position: relative;
+  text-align: center;
+  border-style: double;
+  border-width: 5px;
+  display: inline-block;
+}
+
+#survey-form {
+  margin: 20px;
+  background: transparent;
+}
+
+.text-area {
+  margin: 10px;
+}
+
+.main > .border > #survey-form > label {
+  background: transparent;
+  font-weight: bold;
+}
+
+.main > .border > #survey-form > select {
+  font-family: Georgia;
+  font-size: 0.880em;
+}
+
     </style>
 
-<main>
+<main class="main">
   
-    <h1 id="title">Title</h1><br>
+    <h1 id="title">Coding survey</h1><br>
     
-    <p id="description">Description</p><br>
+    <p id="description">This is a survey designed especially for coders, no matter the level of experience, so you are welcome to fill it and ship it.</p><br>
     
+<div class="border">
+
     <form id="survey-form">
       <label for="name" id="name-label">Input your name:</label><br>
       <input type="text"
@@ -44,38 +90,40 @@
 
       <br><br>
 
-      <label for="dropdown" id="dropdown-label">Select your shit:</label><br>
+      <label for="dropdown" id="dropdown-label">Select your level of experience:</label><br>
       <select id="dropdown">
         <option value="">Select one of the options.</option>
-        <option value="1">First one</option>
-        <option value="2">Second one</option>
-        <option value="3">Third one</option>  
+        <option value="1">Beginner</option>
+        <option value="2">Intermediate</option>
+        <option value="3">Expert</option>  
       </select>
 
       <br><br>
 
-      <label>Choose one of the following:</label><br>
-      <input type="radio" name="radio" value="radio1" checked>Option 1<br>
-      <input type="radio" name="radio" value="radio2">Option 2<br>
-      <input type="radio" name="radio" value="radio3">Option 3
+      <label class="radios">Employment status:</label><br>
+      <input type="radio" name="radio" value="radio1" checked>Unemployed<br>
+      <input type="radio" name="radio" value="radio2">Part-time<br>
+      <input type="radio" name="radio" value="radio3">Full-time
 
       <br><br>
 
-      <label>Check if true:</label><br>
-      <input type="checkbox" value="a">Option A<br>
-      <input type="checkbox" value="b">Option B<br>
-      <input type="checkbox" value="c">Option C<br>
-      <input type="checkbox" value="d">Option D
+      <label class="checkboxes">What OS do you use?</label><br>
+      <input type="checkbox" value="a">Windows<br>
+      <input type="checkbox" value="b">MacOS<br>
+      <input type="checkbox" value="c">Linux<br>
+      <input type="checkbox" value="d">Others
 
       <br><br>
 
-      <label>If you have aditional comments write them bellow:</label><br>
-      <textarea rows="10" cols="45">Write your comments here</textarea>
+      <label>Additional comments can be provided below:</label><br>
+      <textarea rows="10" cols="45" class="text-area" placeholder="Your comments here"></textarea>
 
       <br><br>
 
-      <input type="submit" id="submit" value="Submit">
+      <input type="submit" id="submit" value="Ship it!">
     </form>
+
+  </div>
     
   </main>
 </html>
