@@ -12,17 +12,10 @@
   }
 }
 
-@media (max-width: 600px) {
-  header {
-    flex-wrap: wrap;
-  }
-}
-
 * {
   padding: 0;
   margin: 0;
   text-align: center;
-  box-sizing: border-box;
 }
 
 #header {
@@ -35,10 +28,8 @@
   align-items: center;
 }
 
-#header-img {
-  width: 9em;
-  height: auto;
-  display: flex;
+.button {
+  font-size: 1.3em;
 }
 
 .logo > img {
@@ -47,6 +38,10 @@
   align-items: center;
   text-align: center;
   margin-left: 20px;
+  width: 8em;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 li {
@@ -62,8 +57,6 @@ ul {
 
 a {
   color: #000;
-  text-decoration: none;
-  font-size: 1.3em;
 }
 
 .div1 {
@@ -87,17 +80,29 @@ a {
 }
 
 .description {
-  margin: 5.5em 15rem 0 15rem;
+  margin: 5.5em 8em 0 8em;
   font-family: 'Lobster', cursive;
   font-size: 1.4rem;
+  color: rgb(66, 66, 66);
 }
 
 #email-label {
   font-weight: bold;
+  color: rgb(33, 33, 33);
 }
 
 #email {
   margin: 5px 0 0 0;
+}
+
+#nordschleife {
+  font-size: 1.1em;
+  margin-bottom: 3px;
+  font-family: Lobster, monospace;
+}
+
+#track-wiki:hover {
+  color: red;
 }
 
 </style>
@@ -105,24 +110,24 @@ a {
 <!-- Nav bar + Logo (which are both fixed so they will keep the position as you scroll)-->
 
 <html>
-    
+<body>  
     <header id="header">
       <div class="logo">
-        <img src="https://i.pinimg.com/736x/d4/21/7f/d4217f94e671a5ae4bda65d62ee97106--tesla-motors-wordmark.jpg" alt="Tesla logo" id="header-img">
+        <img src="https://icon-library.com/images/tesla-icon/tesla-icon-2.jpg" alt="Tesla logo" id="header-img">
       </div>
 
         <nav id="nav-bar">
           <ul>
-            <li><a class="nav-link" href="#cars">Cars</a></li>
-            <li><a class="nav-link" href="#solar">Solar</a></li>
-            <li><a class="nav-link" href="#shop">Shop</a></li>
+            <li><a class="button" href="#cars">Cars</a></li>
+            <li><a class="button" href="#solar">Solar</a></li>
+            <li><a class="button" href="#shop">Shop</a></li>
           </ul>
         </nav>
     </header>
 
 <!-- Quick description + email submit -->
 
-      <main>
+<main>
 
         <div class="description">
           <p>Tesla was founded in 2003 by a group of engineers who wanted to prove that people didn’t need to compromise to drive electric – that electric 
@@ -141,12 +146,13 @@ energy generation and storage products. Tesla believes the faster the world stop
           >
           <input type="submit" id="submit" value="Submit">
         </form>
-      </main>
+      
       
 <!-- tbd -->
 
       <div class="div1">
-        <h4 id="cars" class="head4">Cars</h4>
+        <h4 id="cars" class="head4">Cars</h4><br>
+        <p style="font-size: 1.1em; font-family: Lobster, monospace;"><em>They have a decent range of vehicles from SUVs such as <a href="https://www.tesla.com/modelx" target="_blank">Model X</a> and <a href="https://www.tesla.com/modely" target="_blank">Model Y</a> but they also have sedans such as <a href="https://www.tesla.com/models" target="_blank">Model S</a> and <a href="https://www.tesla.com/model3" target="_blank">Model 3</a></em>.</p>
         <h4 id="solar" class="head4">Solar</h4>
         <h4 id="shop" class="head4">Shop</h4>
       <div>
@@ -154,7 +160,9 @@ energy generation and storage products. Tesla believes the faster the world stop
 <!-- Tesla Nurburgring youtube video integration -->
 
       <div class="div2">
+        <p id="nordschleife">Below you can watch a video of their fastest car around the <a href="https://en.wikipedia.org/wiki/N%C3%BCrburgring" target="_blank" id="track-wiki">nordschleife</a>.</p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/Ujp3q_aryRA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" id="video" allowfullscreen></iframe>
       </div>
-
+</main>
+</body>
 </html>
