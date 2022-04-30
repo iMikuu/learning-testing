@@ -1,13 +1,8 @@
 <!DOCTYPE html>
-<html>
-    <style>
 
-/* Imported fonts bellow */
+<style>
 
   @import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
-
-
-/* The rest of CSS */
 
 * {
   margin: 0;
@@ -55,16 +50,24 @@
   font-size: 0.880em;
 }
 
-    </style>
+#submit {
+  padding: 0.3em;
+}
 
-<main class="main">
-  
+#submit:hover {
+  color: blue;
+  font-weight: bold;
+}
+
+</style>
+
+<html>
+
+<main class="main"> 
     <h1 id="title">Coding survey</h1><br>
-    
     <p id="description">This is a survey designed especially for coders, no matter the level of experience, so you are welcome to fill it and ship it.</p><br>
     
 <div class="border">
-
     <form id="survey-form">
       <label for="name" id="name-label">Input your name:</label><br>
       <input type="text"
@@ -72,18 +75,14 @@
              name="name"
              placeholder="Your name here"
              required>
-
       <br><br>
-
       <label for="email" id="email-label">Input your email:</label><br>
       <input type="email"
              id="email"
              name="email"
              placeholder="Your email here"
              required>
-
       <br><br>
-
       <label for="number" id="number-label">Enter your age:</label><br>
       <input type="number"
              id="number"
@@ -92,43 +91,31 @@
              max="99"
              placeholder="Your age here"
              required>
-
       <br><br>
-
       <label for="dropdown" id="dropdown-label">Select your level of experience:</label><br>
-      <select id="dropdown">
+      <select id="dropdown" required>
         <option value="">Select one of the options.</option>
         <option value="1">Beginner</option>
         <option value="2">Intermediate</option>
         <option value="3">Expert</option>  
       </select>
-
       <br><br>
-
       <label>Employment status:</label><br>
       <input type="radio" name="radio" value="radio1" checked>Unemployed<br>
       <input type="radio" name="radio" value="radio2">Part-time<br>
       <input type="radio" name="radio" value="radio3">Full-time
-
       <br><br>
-
       <label>What OS do you use?</label><br>
       <input type="checkbox" value="a">Windows<br>
       <input type="checkbox" value="b">MacOS<br>
       <input type="checkbox" value="c">Linux<br>
       <input type="checkbox" value="d">Others
-
       <br><br>
-
       <label>Additional comments can be provided below:</label><br>
       <textarea rows="10" cols="45" class="text-area" placeholder="Your comments here"></textarea>
-
       <br><br>
-
       <input type="submit" id="submit" value="Ship it!">
     </form>
-
-</div>
-    
+</div>   
   </main>
 </html>
