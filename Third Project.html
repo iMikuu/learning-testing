@@ -18,6 +18,12 @@
   text-align: center;
 }
 
+.body {
+  background-image: url(https://tesla-view.thron.com/api/xcontents/resources/delivery/getThumbnail/tesla/1920x1080/1a94f932-5da4-4bf6-b47a-20ea65f9cbcd.jpg?v=50);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #header {
   display: flex;
   position: fixed;
@@ -33,12 +39,6 @@
   font-size: 1.3em;
 }
 
-.body {
-  background-image: url(https://tesla-view.thron.com/api/xcontents/resources/delivery/getThumbnail/tesla/1920x1080/1a94f932-5da4-4bf6-b47a-20ea65f9cbcd.jpg?v=50);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .logo > img {
   display: flex;
   justify-content: center;
@@ -51,15 +51,15 @@
   margin-bottom: 10px;
 }
 
-li {
-  list-style: none;
-}
-
 ul {
   width: 35vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+li {
+  list-style: none;
 }
 
 a {
@@ -70,32 +70,20 @@ a:hover {
   color: red;
 }
 
-.div1 {
-  font-family: 'Source Sans Pro', sans-serif;
-  margin: 0 8em 0 8em;
-}
-
-.head4 {
-  font-size: 2.1em;
-  display: flex;
-  flex-direction: column;
-  margin: 2em 0 0 0;
-}
-
-.div2 {
-  margin: 4em 0 0 0;
-}
-
-#form {
-  margin: 1em 0 0 0;
-  font-size: 20px;
-}
-
 .description {
   margin: 5.5em 8em 0 8em;
   font-family: 'Lobster', cursive;
   font-size: 1.4rem;
   color: rgb(66, 66, 66);
+}
+
+p {
+  text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+}
+
+#form {
+  margin: 1em 0 0 0;
+  font-size: 20px;
 }
 
 #email-label {
@@ -107,26 +95,35 @@ a:hover {
   margin: 5px 0 0 0;
 }
 
-#nordschleife {
-  font-size: 1.1em;
-  margin-bottom: 3px;
-  font-family: Lobster, monospace;
+.div1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0 8em 0 8em;
 }
 
-p {
-  text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+.head4 {
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0 0 0;
 }
 
 h4 {
   text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+  font-family: Lobster, monospace;
 }
 
 #solar.head4 {
   margin-top: 5em;
 }
 
-#shop.head4 {
-  margin-top: 2em;
+.div2 {
+  margin: 4em 0 0 0;
+}
+
+#nordschleife {
+  font-size: 1.1em;
+  margin-bottom: 3px;
+  font-family: Lobster, monospace;
 }
 
 footer {
@@ -145,14 +142,14 @@ footer {
 <body class="body">  
     <header id="header">
       <div class="logo">
-        <img src="https://icon-library.com/images/tesla-icon/tesla-icon-2.jpg" alt="Tesla logo" id="header-img">
+        <img src="https://icon-library.com/images/tesla-icon/tesla-icon-2.jpg" alt="Tesla logo">
       </div>
 
-        <nav id="nav-bar">
+        <nav>
           <ul>
             <li><a class="button" href="#cars">Cars</a></li>
             <li><a class="button" href="#solar">Solar</a></li>
-            <li><a class="button" href="#shop">Shop</a></li>
+            <li><a class="button" href="https://shop.tesla.com/" target="_blank">Shop</a></li>
           </ul>
         </nav>
     </header>
@@ -176,7 +173,7 @@ energy generation and storage products. Tesla believes the faster the world stop
               placeholder="Type your email here"
               required
           >
-          <input type="submit" id="submit" value="Submit">
+          <input type="submit" value="Submit">
         </form>
       
 <!-- random bullshit to fill the page and demonstrate the fixed position of the navbar -->
@@ -198,9 +195,6 @@ energy generation and storage products. Tesla believes the faster the world stop
           Since Solar Roof has a smaller footprint than traditional solar panels, Tesla may be able to add more solar to your roof – working around vents, skylights or other obstructions. This helps maximize the amount of solar energy your roof can produce. Control your system with 24/7 mobile monitoring from anywhere in the world.
           Tesla Solar Roof is the only roof on the market that can help pay for itself over time. Take control of your monthly electric bill by using the energy produced by your solar system to power your home.      
         </p>
-        <h4 id="shop" class="head4">Shop</h4>
-        <p style="font-size: 1.1em; font-family: Lobster, monospace; margin-top:0.8em;">There is also a <a href="https://shop.tesla.com/" target="_blank">Tesla Shop</a> available from which you can order almost everything tesla related
-        starting from vehicle accessories to different apparel.</p>
       <div>
       
 <!-- Tesla Nurburgring youtube video integration -->
