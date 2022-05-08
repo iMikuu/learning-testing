@@ -1,8 +1,157 @@
 <!DOCTYPE html>
 <style>
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link:hover {
+  color:rgb(175, 0, 0);
+  font-weight: bold;
+}
+
+nav ul {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  border-right: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.5rem;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+main {
+  margin-left: 210px;
+  padding: 10px;
+  font-size: 25px;
+}
+
+main header {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 2em;
+  color:rgb(175, 0, 0);
+  font-style: italic;
+  text-align: center;
+}
+
+section header {
+  color: rgb(175, 0, 0);
+  margin-bottom: 5px;
+  margin-top: 1em;
+}
+
+footer {
+  text-align: center;
+  margin-top: 1.5em;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 750px) {
+  main {
+    font-size: 1em;
+    margin-left: 110px;
+    padding: 5px;
+  }
+  
+  main header {
+    font-size: 1.35em;
+  }
+
+  nav ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.8rem;
+  }
+}
 </style>
 
 <html>
+<body>
+  <title>4th project</title>
+    <nav>
+        <ul>
+          <li><a href="#lorem_ipsum_1" class="nav-link">lorem ipsum 1</a></li>
+          <li><a href="#lorem_ipsum_2" class="nav-link">lorem ipsum 2</a></li>
+          <li><a href="#lorem_ipsum_3" class="nav-link">lorem ipsum 3</a></li>
+          <li><a href="#lorem_ipsum_4" class="nav-link">lorem ipsum 4</a></li>
+          <li><a href="#lorem_ipsum_5" class="nav-link">lorem ipsum 5</a></li>
+          <li><a href="#lorem_ipsum_6" class="nav-link">lorem ipsum 6</a></li>
+          <li><a href="#lorem_ipsum_7" class="nav-link">lorem ipsum 7</a></li>
+          <li><a href="#lorem_ipsum_8" class="nav-link">lorem ipsum 8</a></li>
+        </ul>
+    </nav>
+    
+    <main id="main-doc">
 
+      <h1>This will be the main title</h1>
+
+      <section class="main-section" id="lorem_ipsum_1">
+        <header>lorem ipsum 1</header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur nibh elit. Etiam semper, sapien et consectetur tristique, ligula enim euismod quam, eget posuere nisi massa quis dui. Duis odio elit, venenatis ut orci sed, gravida placerat tortor. Proin varius elit metus, a aliquet ante viverra ac. Donec quis nulla non lacus luctus commodo. Vivamus a eros eget nisi semper pellentesque. Praesent in magna fringilla, faucibus orci sed, viverra est. Nullam consectetur a sapien sit amet pharetra. Curabitur sollicitudin neque vitae odio tincidunt, ac luctus ante commodo. Aenean molestie leo quis porta luctus. Curabitur tortor lacus, ultricies ut neque a, mattis feugiat ipsum. Vestibulum urna est, molestie semper lectus a, porttitor luctus neque. Nam eget semper nunc. Vivamus tempor erat a ligula efficitur, ut egestas mi gravida. Pellentesque libero lacus, luctus eget quam posuere, mollis ornare justo.</p>
+      </section>
+    
+      <section class="main-section" id="lorem_ipsum_2">
+        <header>lorem ipsum 2</header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur nibh elit. Etiam semper, sapien et consectetur tristique, ligula enim euismod quam, eget posuere nisi massa quis dui. Duis odio elit, venenatis ut orci sed, gravida placerat tortor. Proin varius elit metus, a aliquet ante viverra ac. Donec quis nulla non lacus luctus commodo. Vivamus a eros eget nisi semper pellentesque. Praesent in magna fringilla, faucibus orci sed, viverra est. Nullam consectetur a sapien sit amet pharetra. Curabitur sollicitudin neque vitae odio tincidunt, ac luctus ante commodo. Aenean molestie leo quis porta luctus. Curabitur tortor lacus, ultricies ut neque a, mattis feugiat ipsum. Vestibulum urna est, molestie semper lectus a, porttitor luctus neque. Nam eget semper nunc. Vivamus tempor erat a ligula efficitur, ut egestas mi gravida. Pellentesque libero lacus, luctus eget quam posuere, mollis ornare justo.</p>
+      </section>
+    
+      <section class="main-section" id="lorem_ipsum_3">
+        <header>lorem ipsum 3</header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur nibh elit. Etiam semper, sapien et consectetur tristique, ligula enim euismod quam, eget posuere nisi massa quis dui. Duis odio elit, venenatis ut orci sed, gravida placerat tortor. Proin varius elit metus, a aliquet ante viverra ac. Donec quis nulla non lacus luctus commodo. Vivamus a eros eget nisi semper pellentesque. Praesent in magna fringilla, faucibus orci sed, viverra est. Nullam consectetur a sapien sit amet pharetra. Curabitur sollicitudin neque vitae odio tincidunt, ac luctus ante commodo. Aenean molestie leo quis porta luctus. Curabitur tortor lacus, ultricies ut neque a, mattis feugiat ipsum. Vestibulum urna est, molestie semper lectus a, porttitor luctus neque. Nam eget semper nunc. Vivamus tempor erat a ligula efficitur, ut egestas mi gravida. Pellentesque libero lacus, luctus eget quam posuere, mollis ornare justo.</p>
+      </section>
+    
+      <section class="main-section" id="lorem_ipsum_4">
+        <header>lorem ipsum 4</header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur nibh elit. Etiam semper, sapien et consectetur tristique, ligula enim euismod quam, eget posuere nisi massa quis dui. Duis odio elit, venenatis ut orci sed, gravida placerat tortor. Proin varius elit metus, a aliquet ante viverra ac. Donec quis nulla non lacus luctus commodo. Vivamus a eros eget nisi semper pellentesque. Praesent in magna fringilla, faucibus orci sed, viverra est. Nullam consectetur a sapien sit amet pharetra. Curabitur sollicitudin neque vitae odio tincidunt, ac luctus ante commodo. Aenean molestie leo quis porta luctus. Curabitur tortor lacus, ultricies ut neque a, mattis feugiat ipsum. Vestibulum urna est, molestie semper lectus a, porttitor luctus neque. Nam eget semper nunc. Vivamus tempor erat a ligula efficitur, ut egestas mi gravida. Pellentesque libero lacus, luctus eget quam posuere, mollis ornare justo.</p>
+      </section>
+      
+      <section class="main-section" id="lorem_ipsum_5">
+        <header>lorem ipsum 5</header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur nibh elit. Etiam semper, sapien et consectetur tristique, ligula enim euismod quam, eget posuere nisi massa quis dui. Duis odio elit, venenatis ut orci sed, gravida placerat tortor. Proin varius elit metus, a aliquet ante viverra ac. Donec quis nulla non lacus luctus commodo. Vivamus a eros eget nisi semper pellentesque. Praesent in magna fringilla, faucibus orci sed, viverra est. Nullam consectetur a sapien sit amet pharetra. Curabitur sollicitudin neque vitae odio tincidunt, ac luctus ante commodo. Aenean molestie leo quis porta luctus. Curabitur tortor lacus, ultricies ut neque a, mattis feugiat ipsum. Vestibulum urna est, molestie semper lectus a, porttitor luctus neque. Nam eget semper nunc. Vivamus tempor erat a ligula efficitur, ut egestas mi gravida. Pellentesque libero lacus, luctus eget quam posuere, mollis ornare justo.</p>
+      </section>
+      
+      <section class="main-section" id="lorem_ipsum_6">
+        <header>lorem ipsum 6</header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur nibh elit. Etiam semper, sapien et consectetur tristique, ligula enim euismod quam, eget posuere nisi massa quis dui. Duis odio elit, venenatis ut orci sed, gravida placerat tortor. Proin varius elit metus, a aliquet ante viverra ac. Donec quis nulla non lacus luctus commodo. Vivamus a eros eget nisi semper pellentesque. Praesent in magna fringilla, faucibus orci sed, viverra est. Nullam consectetur a sapien sit amet pharetra. Curabitur sollicitudin neque vitae odio tincidunt, ac luctus ante commodo. Aenean molestie leo quis porta luctus. Curabitur tortor lacus, ultricies ut neque a, mattis feugiat ipsum. Vestibulum urna est, molestie semper lectus a, porttitor luctus neque. Nam eget semper nunc. Vivamus tempor erat a ligula efficitur, ut egestas mi gravida. Pellentesque libero lacus, luctus eget quam posuere, mollis ornare justo.</p>
+      </section>
+
+      <section class="main-section" id="lorem_ipsum_7">
+        <header>lorem ipsum 7</header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur nibh elit. Etiam semper, sapien et consectetur tristique, ligula enim euismod quam, eget posuere nisi massa quis dui. Duis odio elit, venenatis ut orci sed, gravida placerat tortor. Proin varius elit metus, a aliquet ante viverra ac. Donec quis nulla non lacus luctus commodo. Vivamus a eros eget nisi semper pellentesque. Praesent in magna fringilla, faucibus orci sed, viverra est. Nullam consectetur a sapien sit amet pharetra. Curabitur sollicitudin neque vitae odio tincidunt, ac luctus ante commodo. Aenean molestie leo quis porta luctus. Curabitur tortor lacus, ultricies ut neque a, mattis feugiat ipsum. Vestibulum urna est, molestie semper lectus a, porttitor luctus neque. Nam eget semper nunc. Vivamus tempor erat a ligula efficitur, ut egestas mi gravida. Pellentesque libero lacus, luctus eget quam posuere, mollis ornare justo.</p>
+      </section>
+
+      <section class="main-section" id="lorem_ipsum_8">
+        <header>lorem ipsum 8</header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur nibh elit. Etiam semper, sapien et consectetur tristique, ligula enim euismod quam, eget posuere nisi massa quis dui. Duis odio elit, venenatis ut orci sed, gravida placerat tortor. Proin varius elit metus, a aliquet ante viverra ac. Donec quis nulla non lacus luctus commodo. Vivamus a eros eget nisi semper pellentesque. Praesent in magna fringilla, faucibus orci sed, viverra est. Nullam consectetur a sapien sit amet pharetra. Curabitur sollicitudin neque vitae odio tincidunt, ac luctus ante commodo. Aenean molestie leo quis porta luctus. Curabitur tortor lacus, ultricies ut neque a, mattis feugiat ipsum. Vestibulum urna est, molestie semper lectus a, porttitor luctus neque. Nam eget semper nunc. Vivamus tempor erat a ligula efficitur, ut egestas mi gravida. Pellentesque libero lacus, luctus eget quam posuere, mollis ornare justo.</p>
+      </section>
+    </main>
+</body>
+  <footer>This is <del>an interesting</del> a boring footer.</footer>
 </html>
