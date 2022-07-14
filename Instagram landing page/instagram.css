@@ -1,0 +1,197 @@
+/* font imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex&display=swap');
+
+/* rest of the css */
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: hsl(0.00,0.00%,97.84%);
+}
+
+/* the body but I used article for some reason */
+
+.article {
+    display: flex;
+    margin-top: 5em;
+    justify-content: center;
+}
+
+/* iPhone image */
+
+.img {
+    display: flex;
+}
+
+/* the start of a clusterfuck (everything that isn't the image or the footer) */
+
+.clusterfuck {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 1st part of the clusterfuck */
+
+.form {
+    display: flex;
+    margin-left: 2.5em;
+    padding: 2em 2em 1em 2em;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid hsl(0.00,0.00%,87.84%);
+    background-color: white;
+    height: 62%;
+}
+
+.form > p {
+    margin-top: 1em;
+    font-size: 0.8rem;
+}
+
+.form > h1 {
+    margin-bottom: 1rem;
+    background-color: white;
+    font-family: 'Cookie', cursive;
+    font-size: 3rem;
+}
+
+.form > .break {
+    display: flex;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    background-color: white;
+}
+
+.form > .break > p {
+    color: hsl(0.00,0.00%,57.84%);
+    background-color: white;
+    margin: 0 1em 0 1em;
+}
+
+.user {
+    margin-bottom: 0.5em;
+    padding: 0.75em;
+    border: 1px solid hsl(0.00,0.00%,87.84%);
+    border-radius: 5px;
+}
+
+.pass {
+    margin-bottom: 1em;
+    padding: 0.75em;
+    border: 1px solid hsl(0.00,0.00%,87.84%);
+    border-radius: 5px;
+}
+
+/* log in button */
+
+.btn {
+    padding: 0.5em 8em 0.5em 8em;
+    border-style: none;
+    background-color: hsl(206.71,89.02%,83.84%);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* "OR" break */
+
+.line {
+    background-color: white;
+    color: hsl(0.00,0.00%,87.84%);
+}
+
+/* log in with fb & forgot pass */
+
+.fb-btn {
+    display: flex;
+    gap: 0.5em;
+    margin-top: 2em;
+    margin-bottom: 0.2em;
+    cursor: pointer;
+    padding: 0 1em 0 1em;
+    font-size: 0.9rem;
+    border: 0;
+    background-color: white;
+}
+
+.fb-btn > p {
+    background-color: white;
+    color: hsl(230.85,48.36%,37.84%);
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.fb-logo {
+    color: hsl(230.85,48.36%,47.84%);
+}
+
+.forgot-pass {
+    text-decoration: none;
+    background-color: white;
+}
+
+/* 2nd part of the clusterfuck */
+
+.no-account {
+    margin-top: 1em;
+    margin-left: 2.5em;
+    padding: 1.5em 2em 1.5em 2em;
+    text-align: center;
+    border: 1px solid hsl(0.00,0.00%,87.84%);
+    background-color: white;
+}
+
+.no-account > p {
+    font-size: 0.85rem;
+    background-color: white;
+    font-family: sans-serif;
+}
+
+.no-account > p > a {
+    text-decoration: none;
+    background-color: white;
+    font-family: 'Roboto Flex', sans-serif;
+    color: hsl(208.04,79.28%,50.78%);
+}
+
+/* 3rd part of the clusterfuck */
+
+.app-download {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    margin-left: 2.5em;
+    align-items: center;
+    color: hsl(0, 0%, 30%);
+}
+
+/* Google and Apple buttons */
+
+.download-links {
+    display: flex;
+    margin-top: 1em;
+}
+
+.app-store {
+    display: flex;
+    height: 90%;
+    margin-left: 1.75em;
+}
+
+.google-play {
+    display: flex;
+    height: 90%;
+}
+
+/* this one is pretty simple to understand */
+
+footer {
+    margin-top: 15em;
+    font-size: 0.75rem;
+    color: hsl(0, 0%, 30%);
+    text-align: center;
+}
